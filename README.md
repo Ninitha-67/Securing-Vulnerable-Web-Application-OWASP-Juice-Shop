@@ -21,10 +21,15 @@ This project demonstrates security testing of the OWASP Juice Shop vulnerable we
 - Application: OWASP Juice Shop (Dockerized)
 - Network: Host-Only / NAT
 
-## How to Run (Lab Setup)
-Target (Ubuntu):
-- docker pull bkimminich/juice-shop
-- docker run -d --name juice -p 3000:3000 bkimminich/juice-shop
+## How to Run (Local Lab)
+
+### Target (Ubuntu)
+sudo apt update
+sudo apt install docker.io -y
+sudo docker run -d --name juice -p 3000:3000 bkimminich/juice-shop
+
+### Access (Kali Browser)
+http://<ubuntu-hostonly-ip>:3000
 
 Attacker (Kali):
 - Open http://<ubuntu-ip>:3000
@@ -34,6 +39,31 @@ Attacker (Kali):
 - SQL Injection
 - Cross-Site Scripting (XSS)
 - Broken Access Control
+
+## Key Findings (OWASP-aligned)
+- DOM-Based XSS (Injection)
+- Broken Access Control (Admin route access attempts)
+- Token Exposure Risk (LocalStorage)
+- Business Logic Risk (Quantity manipulation attempts)
+
+## Security Hardening (Recommendations)
+- Input sanitization + output encoding + CSP for XSS prevention
+- Server-side authorization checks + RBAC for admin routes
+- Server-side validation for quantity and pricing logic
+- Store tokens using HttpOnly cookies + token expiry/rotation
+
+## Validation (Re-testing)
+- Re-tested payloads to verify controls (blocked/sanitized behavior observed where applicable)
+
+## Evidence (Screenshots)
+
+### Deployment Proof
+![Docker Running]
+### Application Access
+![Juice Shop Home]
+### XSS Proof
+![DOM XSS]
+
 
 ## Learning Outcomes
 - Understanding vulnerable web applications
