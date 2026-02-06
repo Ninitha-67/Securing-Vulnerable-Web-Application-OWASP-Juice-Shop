@@ -30,7 +30,7 @@ sudo docker run -d --name juice -p 3000:3000 bkimminich/juice-shop
 
 ### Access (Kali Browser)
 Attacker (Kali):
-- Open [http://<Ubuntu-IP>:3000]
+- Open [http://< Ubantu IP >:3000]
 ## Vulnerabilities Tested
 - Authentication Bypass
 - SQL Injection
