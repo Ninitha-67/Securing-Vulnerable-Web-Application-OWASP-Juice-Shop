@@ -32,7 +32,7 @@ sudo docker run -d --name juice -p 3000:3000 bkimminich/juice-shop
 http://<ubuntu-hostonly-ip>:3000
 
 Attacker (Kali):
-- Open [http://<ubuntu-ip>:3000]
+- Open[ [http://<ubuntu-ip>:3000]](http://<Ubuntu-IP>:3000)
 ## Vulnerabilities Tested
 - Authentication Bypass
 - SQL Injection
@@ -53,16 +53,6 @@ Attacker (Kali):
 
 ## Validation (Re-testing)
 - Re-tested payloads to verify controls (blocked/sanitized behavior observed where applicable)
-
-## Evidence (Screenshots)
-
-### Deployment Proof
-![Docker Running](https://github.com/Ninitha-67/Securing-Vulnerable-Web-Application-OWASP-Juice-Shop/blob/main/Screenshots/docker_container_running.png)
-### Application Access
-![Juice Shop Home](https://github.com/Ninitha-67/Securing-Vulnerable-Web-Application-OWASP-Juice-Shop/blob/main/Screenshots/juice_shop_homepage.png)
-### XSS Proof
-![DOM XSS](https://github.com/Ninitha-67/Securing-Vulnerable-Web-Application-OWASP-Juice-Shop/blob/main/Screenshots/dom_xss_attack_success.png)
-
 
 ## Learning Outcomes
 - Understanding vulnerable web applications
