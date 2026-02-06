@@ -29,10 +29,8 @@ sudo apt install docker.io -y
 sudo docker run -d --name juice -p 3000:3000 bkimminich/juice-shop
 
 ### Access (Kali Browser)
-[http://<ubuntu-hostonly-ip>:3000](http://<Ubuntu-IP>:3000)
-
 Attacker (Kali):
-- Open http://<Ubuntu-IP>:3000
+- Open [http://<Ubuntu-IP>:3000]
 ## Vulnerabilities Tested
 - Authentication Bypass
 - SQL Injection
