@@ -76,11 +76,11 @@ All vulnerabilities were mapped to the **OWASP Top 10** framework.
 | Vulnerability | OWASP Top 10 Category | Impact | Mitigation | Retest Status |
 |--------------|----------------------|--------|------------|---------------|
 | SQL Injection | Injection | Data compromise | Parameterized queries | Not reproducible |
-| XSS | XSS | Script execution | Input sanitization, CSP | Blocked |
-| Broken Auth | Identification & Auth | Account takeover | Strong auth policies | Improved |
+| XSS | Cross-Site Scripting (XSS) | Script execution | Input sanitization, CSP | Blocked |
+| Broken Auth | Identification and Authentication Failures | Account takeover | Strong auth policies | Improved |
 | Access Control | Broken Access Control | Privilege escalation | RBAC enforcement | Prevented |
 | Misconfiguration | Security Misconfiguration | Info disclosure | Hardening configs | Reduced |
-| Data Exposure | Sensitive Data Exposure | Data leakage | HTTPS, secrets mgmt | Secured |
+| Data Exposure | Sensitive Data Exposure / Cryptographic Failures | Data leakage | HTTPS, secrets mgmt | Secured |
 
 ---
 
@@ -110,10 +110,20 @@ All vulnerabilities were mapped to the **OWASP Top 10** framework.
 - **Fix:** HTTPS enforcement and credential protection  
 - **Result:** Improved confidentiality  
 
+Some mitigations were applied at configuration level, while others are proposed as secure design recommendations based on OWASP best practices.
+
 ---
 
 ## 🔁 Validation & Retesting
 All identified vulnerabilities were re-tested after mitigation. Previously exploitable issues were no longer reproducible or were significantly reduced.
+
+---
+
+## 🎓 Learning Outcomes
+- Gained hands-on experience in web application security testing  
+- Improved understanding of OWASP Top 10 vulnerabilities  
+- Learned structured vulnerability assessment and reporting  
+- Practiced ethical security testing in a controlled environment
 
 ---
 
