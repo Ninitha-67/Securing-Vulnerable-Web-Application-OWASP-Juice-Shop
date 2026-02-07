@@ -1,6 +1,2 @@
-⚠️ DISCLAIMER
-
-This project was conducted strictly for educational and academic purposes.
-All testing was performed in a controlled lab environment on intentionally vulnerable applications.
-The author does not promote illegal hacking or unauthorized access.
-
+## Disclaimer
+This project is intended strictly for educational and ethical learning purposes. All testing was performed in a controlled laboratory environment using intentionally vulnerable applications. The author does not endorse or encourage unauthorized testing on real-world systems.
